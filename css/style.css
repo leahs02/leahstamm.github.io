@@ -1,0 +1,137 @@
+:root {
+  --bg: #fdfcfb;
+  --text: #23201d;
+  --muted: #6b6560;
+  --accent: #8a5a44;
+  --border: #e8e3dd;
+  --max-width: 680px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17140f;
+    --text: #ece7e1;
+    --muted: #9a938b;
+    --accent: #d99a7a;
+    --border: #2c2721;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+header.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header.site-header h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+header.site-header h1 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 1.25rem;
+  font-size: 0.95rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+}
+
+a {
+  color: var(--accent);
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list li {
+  margin-bottom: 2rem;
+}
+
+.post-list time {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.15rem;
+}
+
+.post-list a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.post-list a:hover {
+  color: var(--accent);
+}
+
+.post-excerpt {
+  color: var(--muted);
+  font-size: 0.98rem;
+  margin: 0.4rem 0 0;
+}
+
+article.post header {
+  margin-bottom: 2rem;
+}
+
+article.post time {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+footer.site-footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
