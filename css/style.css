@@ -192,6 +192,67 @@ article.post time {
   margin: 0.5rem 0 0;
 }
 
+.things-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.things-list li {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.things-list li:last-child {
+  border-bottom: none;
+}
+
+.things-list a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.things-list a:hover {
+  color: var(--accent);
+}
+
+.things-list p {
+  color: var(--muted);
+  margin: 0.4rem 0 0;
+}
+
+.entry-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.entry-list li {
+  margin-bottom: 1.25rem;
+}
+
+.entry-list .entry-title {
+  font-weight: bold;
+}
+
+.entry-list .entry-meta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.4rem;
+}
+
 footer.site-footer {
   margin-top: 4rem;
   padding-top: 1.5rem;
