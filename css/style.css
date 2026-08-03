@@ -50,8 +50,7 @@ body {
 .resume-header img {
   display: block;
   width: 100%;
-  height: auto;
-  max-height: 480px;
+  aspect-ratio: 2.08 / 1;
   object-fit: cover;
 }
 
