@@ -36,6 +36,82 @@ body {
   padding: 3rem 1.5rem 5rem;
 }
 
+.wrap.wrap-wide {
+  max-width: 900px;
+}
+
+.resume-header {
+  position: relative;
+  margin: 0 0 3rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.resume-header img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+}
+
+.resume-header .resume-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 1rem 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.15em;
+  color: #23201d;
+  white-space: nowrap;
+}
+
+.resume-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3rem;
+}
+
+.resume-columns > div:first-child {
+  border-right: 1px solid var(--resume-accent, #5b7c99);
+  padding-right: 3rem;
+}
+
+.resume-columns h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--resume-accent, #5b7c99);
+  margin: 2rem 0 1rem;
+}
+
+.resume-columns h3:first-child {
+  margin-top: 0;
+}
+
+.resume-columns .entry-list {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .resume-columns {
+    grid-template-columns: 1fr;
+  }
+  .resume-columns > div:first-child {
+    border-right: none;
+    border-bottom: 1px solid var(--resume-accent, #5b7c99);
+    padding-right: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 header.site-header {
   display: flex;
   justify-content: space-between;
