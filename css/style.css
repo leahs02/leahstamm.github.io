@@ -200,7 +200,8 @@ article.post figure {
   margin: 2rem 0;
 }
 
-article.post figure img {
+article.post figure img,
+article.post figure video {
   display: block;
   width: 100%;
   height: auto;
