@@ -361,6 +361,21 @@ article.post time {
   margin: 0 0 1.5rem;
 }
 
+.shelf-subsection {
+  margin-bottom: 2.5rem;
+}
+
+.shelf-subsection h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
 .book-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
