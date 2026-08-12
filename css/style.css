@@ -345,6 +345,75 @@ article.post time {
   margin-bottom: 0.4rem;
 }
 
+.shelf-section {
+  margin-bottom: 3.5rem;
+}
+
+.shelf-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.shelf-count {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 1.75rem 1.25rem;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.book-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  background: var(--border);
+  transition: opacity 0.15s ease;
+}
+
+.book-card:hover img {
+  opacity: 0.8;
+}
+
+.book-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 0.6rem;
+}
+
+.book-author {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+
+.book-rating {
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-top: 0.15rem;
+  letter-spacing: 1px;
+}
+
+.giscus-wrap {
+  margin-top: 1rem;
+}
+
 footer.site-footer {
   margin-top: 4rem;
   padding-top: 1.5rem;
