@@ -362,18 +362,56 @@ article.post time {
 }
 
 .shelf-subsection {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1.25rem;
 }
 
-.shelf-subsection h4 {
+.shelf-subsection summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.shelf-subsection summary::-webkit-details-marker {
+  display: none;
+}
+
+.shelf-subsection summary h4 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 600;
   letter-spacing: 0.03em;
   font-size: 0.95rem;
   color: var(--accent);
-  margin: 0 0 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--border);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shelf-subsection summary h4::before {
+  content: "\25B8";
+  display: inline-block;
+  font-size: 0.8em;
+  transition: transform 0.15s ease;
+}
+
+.shelf-subsection[open] summary h4::before {
+  transform: rotate(90deg);
+}
+
+.shelf-preview {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0.3rem 0 0;
+}
+
+.shelf-toggle-hint {
+  color: var(--accent);
+}
+
+.shelf-subsection .book-grid {
+  margin-top: 1.5rem;
 }
 
 .book-grid {
