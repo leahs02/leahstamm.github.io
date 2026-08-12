@@ -361,6 +361,40 @@ article.post time {
   margin: 0 0 1.5rem;
 }
 
+details.shelf-section summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details.shelf-section summary::-webkit-details-marker {
+  display: none;
+}
+
+details.shelf-section summary h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+details.shelf-section summary h3::before {
+  content: "\25B8";
+  display: inline-block;
+  font-size: 0.75em;
+  transition: transform 0.15s ease;
+}
+
+details.shelf-section[open] summary h3::before {
+  transform: rotate(90deg);
+}
+
+details.shelf-section summary .shelf-count {
+  margin-bottom: 0;
+}
+
+details.shelf-section .book-grid {
+  margin-top: 1.5rem;
+}
+
 .shelf-subsection {
   margin-bottom: 1.25rem;
   border-bottom: 1px solid var(--border);
