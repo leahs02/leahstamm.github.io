@@ -9,6 +9,7 @@
   --nav-art: #7a5c8a;
   --nav-adventures: #4a7c59;
   --nav-library: #4a6c8a;
+  --nav-studies: #9c7a3c;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +23,7 @@
     --nav-art: #c9a8dd;
     --nav-adventures: #8fc99f;
     --nav-library: #8ab4d9;
+    --nav-studies: #d9b877;
   }
 }
 
@@ -108,6 +110,7 @@ body {
 .landing-nav a.nav-art { color: var(--nav-art); }
 .landing-nav a.nav-adventures { color: var(--nav-adventures); }
 .landing-nav a.nav-library { color: var(--nav-library); }
+.landing-nav a.nav-studies { color: var(--nav-studies); }
 
 .landing-divider {
   border: none;
@@ -267,6 +270,7 @@ header.site-header nav:not(.nav-secondary) a:nth-child(1) { color: var(--nav-sto
 header.site-header nav:not(.nav-secondary) a:nth-child(2) { color: var(--nav-art); }
 header.site-header nav:not(.nav-secondary) a:nth-child(3) { color: var(--nav-adventures); }
 header.site-header nav:not(.nav-secondary) a:nth-child(4) { color: var(--nav-library); }
+header.site-header nav:not(.nav-secondary) a:nth-child(5) { color: var(--nav-studies); }
 
 header.site-header nav:not(.nav-secondary) a {
   font-weight: 600;
@@ -491,6 +495,68 @@ article.post time {
 
 .contact-list li {
   margin-bottom: 0.4rem;
+}
+
+.class-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.class-card {
+  margin-bottom: 2.75rem;
+  padding-bottom: 2.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.class-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.class-card h3 {
+  font-size: 1.15rem;
+  margin: 0 0 0.15rem;
+}
+
+.class-meta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 0.85rem;
+}
+
+.class-description {
+  margin: 0 0 1.1rem;
+}
+
+.class-files {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.class-files li {
+  margin-bottom: 0.5rem;
+}
+
+.class-files a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.class-files a:hover {
+  text-decoration: underline;
+}
+
+.class-files-empty {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0;
 }
 
 .shelf-section {
