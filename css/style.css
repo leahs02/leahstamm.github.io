@@ -565,22 +565,64 @@ article.post time {
   margin: 0 0 3rem;
 }
 
-.discipline-list li {
-  margin-bottom: 1.15rem;
-  padding-bottom: 1.15rem;
+.discipline-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
 }
 
-.discipline-list li:last-child {
+.discipline-item:last-child {
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-.discipline-list strong {
+.discipline-item h3 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 600;
+  font-size: 1.05rem;
   color: var(--nav-studies);
+  margin: 0 0 0.4rem;
+}
+
+.discipline-description {
+  margin: 0;
+}
+
+/* "Related Projects, Papers & Coursework" is a nested shelf-subsection
+   (reusing the Library page's collapsible arrow styling) sitting inside
+   a discipline-item, which already provides its own bottom border. */
+.discipline-item details.shelf-subsection {
+  margin: 1rem 0 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.discipline-links {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.discipline-links li {
+  margin-bottom: 0.5rem;
+}
+
+.discipline-links a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.discipline-links a:hover {
+  text-decoration: underline;
+}
+
+.discipline-links-empty {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-style: italic;
 }
 
 .shelf-section {
