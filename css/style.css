@@ -10,6 +10,8 @@
   --nav-adventures: #4a7c59;
   --nav-library: #4a6c8a;
   --nav-studies: #9c7a3c;
+  --disc-psychology: #b06a56;
+  --disc-neuroscience: #3f8f8a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +26,8 @@
     --nav-adventures: #8fc99f;
     --nav-library: #8ab4d9;
     --nav-studies: #d9b877;
+    --disc-psychology: #dba28c;
+    --disc-neuroscience: #82c9c4;
   }
 }
 
@@ -497,67 +501,6 @@ article.post time {
   margin-bottom: 0.4rem;
 }
 
-.class-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.class-card {
-  margin-bottom: 2.75rem;
-  padding-bottom: 2.75rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.class-card:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.class-card h3 {
-  font-size: 1.15rem;
-  margin: 0 0 0.15rem;
-}
-
-.class-meta {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin: 0 0 0.85rem;
-}
-
-.class-description {
-  margin: 0 0 1.1rem;
-}
-
-.class-files {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.class-files li {
-  margin-bottom: 0.5rem;
-}
-
-.class-files a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.92rem;
-  text-decoration: none;
-}
-
-.class-files a:hover {
-  text-decoration: underline;
-}
-
-.class-files-empty {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.88rem;
-  color: var(--muted);
-  font-style: italic;
-  margin: 0;
-}
 
 /* Six-tile interactive grid: a hidden radio per tile + CSS :has() shows
    the matching full-width panel below the grid. Same mechanism as the
@@ -603,11 +546,6 @@ article.post time {
   display: block;
   width: 44px;
   height: 44px;
-  color: var(--muted);
-}
-
-.discipline-radio:checked + .discipline-tile .discipline-icon {
-  color: var(--nav-studies);
 }
 
 .discipline-icon svg {

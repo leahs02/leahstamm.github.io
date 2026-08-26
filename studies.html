@@ -32,11 +32,12 @@
         <input type="radio" name="discipline" id="disc-psychology" class="discipline-radio">
         <label for="disc-psychology" class="discipline-tile">
           <span class="discipline-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M32,22 C32,22 32,44 32,48"/>
-              <path d="M32,26 C24,26 19,20 21,13"/>
-              <path d="M32,26 C40,26 45,20 43,13"/>
-              <path d="M25,48 L39,48"/>
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M32,22 C32,22 32,44 32,48" stroke="var(--muted)"/>
+              <path d="M32,26 C24,26 19,20 21,13" stroke="var(--muted)"/>
+              <path d="M32,26 C40,26 45,20 43,13" stroke="var(--muted)"/>
+              <path d="M25,48 L39,48" stroke="var(--disc-psychology)"/>
+              <circle cx="32" cy="14" r="3.2" fill="var(--disc-psychology)" stroke="none"/>
             </svg>
           </span>
           <h3>Psychology</h3>
@@ -45,19 +46,19 @@
         <input type="radio" name="discipline" id="disc-neuroscience" class="discipline-radio">
         <label for="disc-neuroscience" class="discipline-tile">
           <span class="discipline-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="32" cy="32" r="6"/>
-              <path d="M28,28 L20,19"/>
-              <circle cx="20" cy="19" r="1.6" fill="currentColor" stroke="none"/>
-              <path d="M36,28 L44,19"/>
-              <circle cx="44" cy="19" r="1.6" fill="currentColor" stroke="none"/>
-              <path d="M26,32 L14,32"/>
-              <circle cx="14" cy="32" r="1.6" fill="currentColor" stroke="none"/>
-              <path d="M28,36 L20,45"/>
-              <circle cx="20" cy="45" r="1.6" fill="currentColor" stroke="none"/>
-              <path d="M38,32 L52,32"/>
-              <path d="M52,32 L58,26"/>
-              <path d="M52,32 L58,38"/>
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="32" cy="32" r="6" stroke="var(--muted)"/>
+              <path d="M28,28 L20,19" stroke="var(--muted)"/>
+              <circle cx="20" cy="19" r="2.2" fill="var(--disc-neuroscience)" stroke="none"/>
+              <path d="M36,28 L44,19" stroke="var(--muted)"/>
+              <circle cx="44" cy="19" r="2.2" fill="var(--disc-neuroscience)" stroke="none"/>
+              <path d="M26,32 L14,32" stroke="var(--muted)"/>
+              <circle cx="14" cy="32" r="2.2" fill="var(--disc-neuroscience)" stroke="none"/>
+              <path d="M28,36 L20,45" stroke="var(--muted)"/>
+              <circle cx="20" cy="45" r="2.2" fill="var(--disc-neuroscience)" stroke="none"/>
+              <path d="M38,32 L52,32" stroke="var(--muted)"/>
+              <path d="M52,32 L58,26" stroke="var(--muted)"/>
+              <path d="M52,32 L58,38" stroke="var(--muted)"/>
             </svg>
           </span>
           <h3>Neuroscience</h3>
@@ -66,14 +67,14 @@
         <input type="radio" name="discipline" id="disc-philosophy" class="discipline-radio">
         <label for="disc-philosophy" class="discipline-tile">
           <span class="discipline-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20,14 L32,6 L44,14 Z"/>
-              <path d="M18,14 L46,14"/>
-              <path d="M26,18 L26,42"/>
-              <path d="M32,18 L32,42"/>
-              <path d="M38,18 L38,42"/>
-              <path d="M16,42 L48,42"/>
-              <path d="M14,48 L50,48"/>
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20,14 L32,6 L44,14 Z" fill="var(--nav-studies)" stroke="var(--nav-studies)"/>
+              <path d="M18,14 L46,14" stroke="var(--muted)"/>
+              <path d="M26,18 L26,42" stroke="var(--muted)"/>
+              <path d="M32,18 L32,42" stroke="var(--muted)"/>
+              <path d="M38,18 L38,42" stroke="var(--muted)"/>
+              <path d="M16,42 L48,42" stroke="var(--muted)"/>
+              <path d="M14,48 L50,48" stroke="var(--muted)"/>
             </svg>
           </span>
           <h3>Philosophy</h3>
@@ -82,11 +83,15 @@
         <input type="radio" name="discipline" id="disc-anthropology" class="discipline-radio">
         <label for="disc-anthropology" class="discipline-tile">
           <span class="discipline-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <ellipse cx="22" cy="41" rx="5" ry="9"/>
-              <ellipse cx="22" cy="28" rx="3.6" ry="2.6"/>
-              <ellipse cx="40" cy="25" rx="5" ry="9"/>
-              <ellipse cx="40" cy="12" rx="3.6" ry="2.6"/>
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="rotate(-14 22 34)">
+                <ellipse cx="22" cy="41" rx="5" ry="9" stroke="var(--muted)"/>
+                <ellipse cx="22.5" cy="27.5" rx="4" ry="3" stroke="var(--muted)"/>
+              </g>
+              <g transform="rotate(12 40 18)">
+                <ellipse cx="40" cy="25" rx="5" ry="9" fill="var(--nav-adventures)" stroke="none"/>
+                <ellipse cx="39.5" cy="11.5" rx="4" ry="3" fill="var(--nav-adventures)" stroke="none"/>
+              </g>
             </svg>
           </span>
           <h3>Anthropology</h3>
@@ -95,12 +100,12 @@
         <input type="radio" name="discipline" id="disc-linguistics" class="discipline-radio">
         <label for="disc-linguistics" class="discipline-tile">
           <span class="discipline-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="12" y="15" width="40" height="24" rx="6"/>
-              <path d="M22,39 L17,48 L28,39 Z"/>
-              <path d="M20,23 L44,23"/>
-              <path d="M20,28.5 L38,28.5"/>
-              <path d="M20,34 L42,34"/>
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="12" y="15" width="40" height="24" rx="6" stroke="var(--muted)"/>
+              <path d="M22,39 L17,48 L28,39 Z" fill="var(--nav-art)" stroke="var(--nav-art)"/>
+              <path d="M20,23 L44,23" stroke="var(--muted)"/>
+              <path d="M20,28.5 L38,28.5" stroke="var(--muted)"/>
+              <path d="M20,34 L42,34" stroke="var(--muted)"/>
             </svg>
           </span>
           <h3>Linguistics</h3>
@@ -109,10 +114,10 @@
         <input type="radio" name="discipline" id="disc-computer-science" class="discipline-radio">
         <label for="disc-computer-science" class="discipline-tile">
           <span class="discipline-icon" aria-hidden="true">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M25,18 L14,32 L25,46"/>
-              <path d="M39,18 L50,32 L39,46"/>
-              <path d="M35,15 L29,49"/>
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M25,18 L14,32 L25,46" stroke="var(--muted)"/>
+              <path d="M39,18 L50,32 L39,46" stroke="var(--muted)"/>
+              <path d="M35,15 L29,49" stroke="var(--nav-library)"/>
             </svg>
           </span>
           <h3>Computer Science</h3>
@@ -172,23 +177,6 @@
           </ul>
         </div>
       </div>
-
-      <p class="page-intro">Below are notes and projects from individual classes, organized by course. If you're an employer curious what a class actually covered, or a student looking for study materials, hopefully this is useful &mdash; I'm slowly digging through old files and adding more.</p>
-
-      <ul class="class-list">
-        <li class="class-card">
-          <h3>Course Number &mdash; Course Title</h3>
-          <p class="class-meta">Term &middot; UC Berkeley</p>
-          <p class="class-description">Placeholder &mdash; a short description of what the class covered will go here.</p>
-          <p class="class-files-empty">Notes &amp; projects coming soon.</p>
-          <!-- Once files are added, replace the line above with something like:
-          <ul class="class-files">
-            <li><a href="files/studies/course-code/lecture-notes.pdf" target="_blank" rel="noopener">Lecture notes (PDF)</a></li>
-            <li><a href="files/studies/course-code/final-project.pdf" target="_blank" rel="noopener">Final project (PDF)</a></li>
-          </ul>
-          -->
-        </li>
-      </ul>
     </main>
 
     <footer class="site-footer">
