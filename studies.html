@@ -28,68 +28,150 @@
       <h2>Studies</h2>
       <p class="page-intro">I did my formal studies at the University of California, Berkeley, where they have an incredible Cognitive Science program &mdash; an interdisciplinary degree spanning six different fields: psychology, neuroscience, philosophy, anthropology, linguistics, and computer science. Essentially, the degree explores intelligence and the mind from each of these six perspectives:</p>
 
-      <ul class="discipline-list">
-        <li class="discipline-item">
+      <div class="discipline-tiles">
+        <input type="radio" name="discipline" id="disc-psychology" class="discipline-radio">
+        <label for="disc-psychology" class="discipline-tile">
+          <span class="discipline-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M32,22 C32,22 32,44 32,48"/>
+              <path d="M32,26 C24,26 19,20 21,13"/>
+              <path d="M32,26 C40,26 45,20 43,13"/>
+              <path d="M25,48 L39,48"/>
+            </svg>
+          </span>
           <h3>Psychology</h3>
-          <p class="discipline-description">What is the mind from a behavioral perspective?</p>
-          <details class="shelf-subsection discipline-links-toggle">
-            <summary><h4>Related Projects, Papers &amp; Coursework</h4></summary>
-            <ul class="discipline-links">
-              <li class="discipline-links-empty">Coming soon.</li>
-            </ul>
-          </details>
-        </li>
-        <li class="discipline-item">
+        </label>
+
+        <input type="radio" name="discipline" id="disc-neuroscience" class="discipline-radio">
+        <label for="disc-neuroscience" class="discipline-tile">
+          <span class="discipline-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="32" cy="32" r="6"/>
+              <path d="M28,28 L20,19"/>
+              <circle cx="20" cy="19" r="1.6" fill="currentColor" stroke="none"/>
+              <path d="M36,28 L44,19"/>
+              <circle cx="44" cy="19" r="1.6" fill="currentColor" stroke="none"/>
+              <path d="M26,32 L14,32"/>
+              <circle cx="14" cy="32" r="1.6" fill="currentColor" stroke="none"/>
+              <path d="M28,36 L20,45"/>
+              <circle cx="20" cy="45" r="1.6" fill="currentColor" stroke="none"/>
+              <path d="M38,32 L52,32"/>
+              <path d="M52,32 L58,26"/>
+              <path d="M52,32 L58,38"/>
+            </svg>
+          </span>
           <h3>Neuroscience</h3>
-          <p class="discipline-description">What is the mind from a chemical and biological perspective? Simply, its biological substrate &mdash; the brain.</p>
-          <details class="shelf-subsection discipline-links-toggle">
-            <summary><h4>Related Projects, Papers &amp; Coursework</h4></summary>
-            <ul class="discipline-links">
-              <li class="discipline-links-empty">Coming soon.</li>
-            </ul>
-          </details>
-        </li>
-        <li class="discipline-item">
+        </label>
+
+        <input type="radio" name="discipline" id="disc-philosophy" class="discipline-radio">
+        <label for="disc-philosophy" class="discipline-tile">
+          <span class="discipline-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20,14 L32,6 L44,14 Z"/>
+              <path d="M18,14 L46,14"/>
+              <path d="M26,18 L26,42"/>
+              <path d="M32,18 L32,42"/>
+              <path d="M38,18 L38,42"/>
+              <path d="M16,42 L48,42"/>
+              <path d="M14,48 L50,48"/>
+            </svg>
+          </span>
           <h3>Philosophy</h3>
-          <p class="discipline-description">How are the mind and brain connected? What does it mean to have intelligence? To what extent can you have one (brain, mind, intelligence) and not another? You learn to ask questions that may not have answers, and to build logical proofs.</p>
-          <details class="shelf-subsection discipline-links-toggle">
-            <summary><h4>Related Projects, Papers &amp; Coursework</h4></summary>
-            <ul class="discipline-links">
-              <li class="discipline-links-empty">Coming soon.</li>
-            </ul>
-          </details>
-        </li>
-        <li class="discipline-item">
+        </label>
+
+        <input type="radio" name="discipline" id="disc-anthropology" class="discipline-radio">
+        <label for="disc-anthropology" class="discipline-tile">
+          <span class="discipline-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="22" cy="41" rx="5" ry="9"/>
+              <ellipse cx="22" cy="28" rx="3.6" ry="2.6"/>
+              <ellipse cx="40" cy="25" rx="5" ry="9"/>
+              <ellipse cx="40" cy="12" rx="3.6" ry="2.6"/>
+            </svg>
+          </span>
           <h3>Anthropology</h3>
-          <p class="discipline-description">How did our brains evolve? How did the mind evolve? Did they evolve together? Could the brain have evolved as it did without consciousness ever emerging? How have different attributes &mdash; physical, cultural, biological, chemical &mdash; evolved differently in different places? And what does the future hold, now that we&rsquo;re evolving our minds much faster than our bodies can physically keep up?</p>
-          <details class="shelf-subsection discipline-links-toggle">
-            <summary><h4>Related Projects, Papers &amp; Coursework</h4></summary>
-            <ul class="discipline-links">
-              <li class="discipline-links-empty">Coming soon.</li>
-            </ul>
-          </details>
-        </li>
-        <li class="discipline-item">
+        </label>
+
+        <input type="radio" name="discipline" id="disc-linguistics" class="discipline-radio">
+        <label for="disc-linguistics" class="discipline-tile">
+          <span class="discipline-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="12" y="15" width="40" height="24" rx="6"/>
+              <path d="M22,39 L17,48 L28,39 Z"/>
+              <path d="M20,23 L44,23"/>
+              <path d="M20,28.5 L38,28.5"/>
+              <path d="M20,34 L42,34"/>
+            </svg>
+          </span>
           <h3>Linguistics</h3>
-          <p class="discipline-description">We are &ldquo;a symbolic species&rdquo; &mdash; while language in some form isn&rsquo;t unique to humans, the way we use it might be. Or, seen through another lens, language can seem like something almost distinct from humans altogether, something evolving on its own &mdash; maybe instead of humans evolving and then using language, we evolved biologically <em>for</em> language.</p>
-          <details class="shelf-subsection discipline-links-toggle">
-            <summary><h4>Related Projects, Papers &amp; Coursework</h4></summary>
-            <ul class="discipline-links">
-              <li class="discipline-links-empty">Coming soon.</li>
-            </ul>
-          </details>
-        </li>
-        <li class="discipline-item">
+        </label>
+
+        <input type="radio" name="discipline" id="disc-computer-science" class="discipline-radio">
+        <label for="disc-computer-science" class="discipline-tile">
+          <span class="discipline-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M25,18 L14,32 L25,46"/>
+              <path d="M39,18 L50,32 L39,46"/>
+              <path d="M35,15 L29,49"/>
+            </svg>
+          </span>
           <h3>Computer Science</h3>
+        </label>
+
+        <div class="discipline-panel" data-for="disc-psychology">
+          <h4>Psychology</h4>
+          <p class="discipline-description">What is the mind from a behavioral perspective?</p>
+          <p class="discipline-subheader">Related Projects, Papers &amp; Coursework</p>
+          <ul class="discipline-links">
+            <li class="discipline-links-empty">Coming soon.</li>
+          </ul>
+        </div>
+
+        <div class="discipline-panel" data-for="disc-neuroscience">
+          <h4>Neuroscience</h4>
+          <p class="discipline-description">What is the mind from a chemical and biological perspective? Simply, its biological substrate &mdash; the brain.</p>
+          <p class="discipline-subheader">Related Projects, Papers &amp; Coursework</p>
+          <ul class="discipline-links">
+            <li class="discipline-links-empty">Coming soon.</li>
+          </ul>
+        </div>
+
+        <div class="discipline-panel" data-for="disc-philosophy">
+          <h4>Philosophy</h4>
+          <p class="discipline-description">How are the mind and brain connected? What does it mean to have intelligence? To what extent can you have one (brain, mind, intelligence) and not another? You learn to ask questions that may not have answers, and to build logical proofs.</p>
+          <p class="discipline-subheader">Related Projects, Papers &amp; Coursework</p>
+          <ul class="discipline-links">
+            <li class="discipline-links-empty">Coming soon.</li>
+          </ul>
+        </div>
+
+        <div class="discipline-panel" data-for="disc-anthropology">
+          <h4>Anthropology</h4>
+          <p class="discipline-description">How did our brains evolve? How did the mind evolve? Did they evolve together? Could the brain have evolved as it did without consciousness ever emerging? How have different attributes &mdash; physical, cultural, biological, chemical &mdash; evolved differently in different places? And what does the future hold, now that we&rsquo;re evolving our minds much faster than our bodies can physically keep up?</p>
+          <p class="discipline-subheader">Related Projects, Papers &amp; Coursework</p>
+          <ul class="discipline-links">
+            <li class="discipline-links-empty">Coming soon.</li>
+          </ul>
+        </div>
+
+        <div class="discipline-panel" data-for="disc-linguistics">
+          <h4>Linguistics</h4>
+          <p class="discipline-description">We are &ldquo;a symbolic species&rdquo; &mdash; while language in some form isn&rsquo;t unique to humans, the way we use it might be. Or, seen through another lens, language can seem like something almost distinct from humans altogether, something evolving on its own &mdash; maybe instead of humans evolving and then using language, we evolved biologically <em>for</em> language.</p>
+          <p class="discipline-subheader">Related Projects, Papers &amp; Coursework</p>
+          <ul class="discipline-links">
+            <li class="discipline-links-empty">Coming soon.</li>
+          </ul>
+        </div>
+
+        <div class="discipline-panel" data-for="disc-computer-science">
+          <h4>Computer Science</h4>
           <p class="discipline-description">And how can we model all of this &mdash; the mind, the brain, language, emotions, choices, evolution? You learn the basics of programming, logic, and simulation.</p>
-          <details class="shelf-subsection discipline-links-toggle">
-            <summary><h4>Related Projects, Papers &amp; Coursework</h4></summary>
-            <ul class="discipline-links">
-              <li class="discipline-links-empty">Coming soon.</li>
-            </ul>
-          </details>
-        </li>
-      </ul>
+          <p class="discipline-subheader">Related Projects, Papers &amp; Coursework</p>
+          <ul class="discipline-links">
+            <li class="discipline-links-empty">Coming soon.</li>
+          </ul>
+        </div>
+      </div>
 
       <p class="page-intro">Below are notes and projects from individual classes, organized by course. If you're an employer curious what a class actually covered, or a student looking for study materials, hopefully this is useful &mdash; I'm slowly digging through old files and adding more.</p>
 
@@ -113,5 +195,24 @@
       &copy; 2026 Leah Stamm
     </footer>
   </div>
+
+  <script>
+    (function () {
+      document.querySelectorAll('.discipline-radio').forEach(function (radio) {
+        radio.dataset.wasChecked = 'false';
+        radio.addEventListener('click', function () {
+          if (this.dataset.wasChecked === 'true') {
+            this.checked = false;
+            this.dataset.wasChecked = 'false';
+          } else {
+            document.querySelectorAll('input[name="' + this.name + '"]').forEach(function (r) {
+              r.dataset.wasChecked = 'false';
+            });
+            this.dataset.wasChecked = 'true';
+          }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
