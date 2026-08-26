@@ -271,10 +271,9 @@ nav a:hover {
 }
 
 header.site-header nav:not(.nav-secondary) a:nth-child(1) { color: var(--nav-stories); }
-header.site-header nav:not(.nav-secondary) a:nth-child(2) { color: var(--nav-art); }
+header.site-header nav:not(.nav-secondary) a:nth-child(2) { color: var(--nav-studies); }
 header.site-header nav:not(.nav-secondary) a:nth-child(3) { color: var(--nav-adventures); }
 header.site-header nav:not(.nav-secondary) a:nth-child(4) { color: var(--nav-library); }
-header.site-header nav:not(.nav-secondary) a:nth-child(5) { color: var(--nav-studies); }
 
 header.site-header nav:not(.nav-secondary) a {
   font-weight: 600;
