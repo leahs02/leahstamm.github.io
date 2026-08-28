@@ -367,6 +367,107 @@ article.post blockquote {
   font-style: italic;
 }
 
+article.post h3 {
+  font-size: 1.05rem;
+  margin: 2.25rem 0 1rem;
+}
+
+article.post h3:first-of-type {
+  margin-top: 0;
+}
+
+.evidence-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.evidence-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--border);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.unfinished-note {
+  color: var(--muted);
+  font-style: italic;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.works-cited-note {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.pdf-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pdf-list li {
+  margin-bottom: 0.5rem;
+}
+
+.pdf-item {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.6rem;
+}
+
+.pdf-item summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+}
+
+.pdf-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.pdf-item summary::before {
+  content: "\25B8";
+  display: inline-block;
+  font-size: 0.75em;
+  color: var(--muted);
+  transition: transform 0.15s ease;
+}
+
+.pdf-item[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.pdf-embed-wrap {
+  margin: 0.85rem 0 0;
+}
+
+.pdf-embed-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 75vh;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+}
+
+.pdf-open-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.pdf-open-link:hover {
+  text-decoration: underline;
+}
+
 article.post figure {
   margin: 2rem 0;
 }
