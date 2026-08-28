@@ -392,6 +392,13 @@ article.post time {
   color: var(--muted);
 }
 
+.essay-meta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--nav-studies);
+  margin: 0 0 0.35rem;
+}
+
 .back-link {
   display: inline-block;
   margin-top: 3rem;
@@ -560,6 +567,14 @@ article.post time {
   color: var(--muted);
   font-style: italic;
   margin: 0;
+}
+
+/* An essay/note title listed before its page exists yet — becomes a
+   plain .class-files li (a real link) once the piece is uploaded. */
+.class-files-pending {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+  color: var(--muted);
 }
 
 .studies-more {
