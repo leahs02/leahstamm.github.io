@@ -443,6 +443,12 @@ article.post h3:first-of-type {
   transform: rotate(90deg);
 }
 
+.pdf-item-description {
+  margin: 0.6rem 0 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
 .pdf-embed-wrap {
   margin: 0.85rem 0 0;
 }
