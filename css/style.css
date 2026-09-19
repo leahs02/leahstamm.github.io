@@ -376,6 +376,30 @@ article.post h3:first-of-type {
   margin-top: 0;
 }
 
+/* Numbered questions stay indented under their marker; the answer
+   paragraph pulls itself back out to sit flush with the rest of
+   the post's text. */
+article.post ol.numbered-questions {
+  padding-left: 1.5em;
+  margin: 0 0 1.5rem;
+}
+
+article.post ol.numbered-questions li {
+  margin-bottom: 1.5rem;
+}
+
+article.post ol.numbered-questions li:last-child {
+  margin-bottom: 0;
+}
+
+article.post ol.numbered-questions li > strong {
+  display: block;
+}
+
+article.post ol.numbered-questions .list-response {
+  margin: 1rem 0 0 -1.5em;
+}
+
 .evidence-list {
   list-style: none;
   padding: 0;
