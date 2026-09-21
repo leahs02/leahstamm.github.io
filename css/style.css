@@ -400,6 +400,29 @@ article.post ol.numbered-questions .list-response {
   margin: 1rem 0 0 -1.5em;
 }
 
+/* Footnotes: superscript markers in the text link down to the Notes
+   list, which links back up to where the reader left off. */
+article.post sup.fn-ref {
+  font-size: 0.75em;
+  line-height: 0;
+}
+
+article.post sup.fn-ref a,
+article.post .fn-back {
+  text-decoration: none;
+}
+
+article.post ol.footnotes {
+  padding-left: 1.5em;
+  margin: 0 0 1.5rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+article.post ol.footnotes li {
+  margin-bottom: 0.6rem;
+}
+
 .evidence-list {
   list-style: none;
   padding: 0;
